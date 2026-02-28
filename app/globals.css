@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* AxolotlHub Design System - Aquatic Bioluminescence */
+    --deep-abyss: 199 73% 15%;
+    --bioluminescent: 165 100% 42%;
+    --axolotl-pink: 340 100% 71%;
+    --gill-red: 350 72% 63%;
+    --water-surface: 195 47% 94%;
+    --algae-green: 88 50% 48%;
+    --night-glow: 231 76% 30%;
+    
+    /* shadcn/ui theme mapping */
+    --background: 195 47% 94%;
+    --foreground: 199 73% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 199 73% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 199 73% 15%;
+    --primary: 165 100% 42%;
+    --primary-foreground: 199 73% 15%;
+    --secondary: 195 47% 90%;
+    --secondary-foreground: 199 73% 15%;
+    --muted: 195 30% 88%;
+    --muted-foreground: 199 40% 35%;
+    --accent: 340 100% 71%;
+    --accent-foreground: 199 73% 15%;
+    --destructive: 350 72% 63%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 195 30% 85%;
+    --input: 195 30% 85%;
+    --ring: 165 100% 42%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 199 73% 10%;
+    --foreground: 195 47% 94%;
+    --card: 199 73% 12%;
+    --card-foreground: 195 47% 94%;
+    --popover: 199 73% 12%;
+    --popover-foreground: 195 47% 94%;
+    --primary: 165 100% 42%;
+    --primary-foreground: 199 73% 15%;
+    --secondary: 199 60% 18%;
+    --secondary-foreground: 195 47% 94%;
+    --muted: 199 50% 20%;
+    --muted-foreground: 195 30% 70%;
+    --accent: 340 100% 71%;
+    --accent-foreground: 199 73% 15%;
+    --destructive: 350 72% 63%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 199 50% 20%;
+    --input: 199 50% 20%;
+    --ring: 165 100% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-outfit, "Outfit"), ui-sans-serif, system-ui, sans-serif;
+  }
+  
+  .font-body {
+    font-family: var(--font-inter, "Inter"), ui-sans-serif, system-ui, sans-serif;
+  }
+  
+  .font-mono {
+    font-family: var(--font-space-mono, "Space Mono"), ui-monospace, monospace;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-bioluminescent to-axolotl-pink;
+  }
+  
+  .bg-deep-abyss {
+    background-color: hsl(var(--deep-abyss));
+  }
+  
+  .text-deep-abyss {
+    color: hsl(var(--deep-abyss));
+  }
+  
+  .bg-bioluminescent {
+    background-color: hsl(var(--bioluminescent));
+  }
+  
+  .text-bioluminescent {
+    color: hsl(var(--bioluminescent));
+  }
+  
+  .bg-axolotl-pink {
+    background-color: hsl(var(--axolotl-pink));
+  }
+  
+  .text-axolotl-pink {
+    color: hsl(var(--axolotl-pink));
+  }
+  
+  .bg-gill-red {
+    background-color: hsl(var(--gill-red));
+  }
+  
+  .text-gill-red {
+    color: hsl(var(--gill-red));
+  }
+  
+  .bg-water-surface {
+    background-color: hsl(var(--water-surface));
+  }
+  
+  .text-water-surface {
+    color: hsl(var(--water-surface));
+  }
+  
+  .bg-algae-green {
+    background-color: hsl(var(--algae-green));
+  }
+  
+  .text-algae-green {
+    color: hsl(var(--algae-green));
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px hsl(var(--bioluminescent) / 0.5);
+  }
+  to {
+    box-shadow: 0 0 30px hsl(var(--bioluminescent) / 0.8), 0 0 60px hsl(var(--bioluminescent) / 0.4);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--water-surface));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--deep-abyss) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--deep-abyss) / 0.5);
+}
+
+/* Selection */
+::selection {
+  background: hsl(var(--bioluminescent) / 0.3);
+  color: hsl(var(--deep-abyss));
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid hsl(var(--bioluminescent));
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

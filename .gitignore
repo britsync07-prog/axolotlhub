@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# OpenNext / Cloudflare Workers build output
+.open-next/
+
+# Wrangler local state
+.wrangler/
+
+# Local dev environment secrets
+.dev.vars
+
+# Editor
+.DS_Store
+*.local
