@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   },
   verification: {
     // This is the specific fix for your Google Search Console verification
-    google: '25da61ebe9e7bf2f', 
+    google: 'GLXZsEJksZNORwjvHa82_tcUEOXBzei8umPgMr7iRts', 
   },
   category: 'pets',
 };
