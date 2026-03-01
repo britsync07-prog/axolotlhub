@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://axolotlhub.com'),
+  metadataBase: new URL('https://axolotlhub.pages.dev'),
   title: {
     default: 'AxolotlHub | Complete Axolotl Care Guide, Facts & Resources',
     template: '%s | AxolotlHub',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://axolotlhub.com',
+    url: 'https://axolotlhub.pages.dev',
     siteName: 'AxolotlHub',
     title: 'AxolotlHub | Complete Axolotl Care Guide, Facts & Resources',
     description: 'The ultimate resource for axolotl care, facts, morphs, and breeding. Daily fresh axolotl content, interactive tools, and expert guidance.',
