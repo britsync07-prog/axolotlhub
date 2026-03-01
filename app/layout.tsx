@@ -11,8 +11,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  // Update this to your current live URL for better SEO indexing
-  metadataBase: new URL('https://axolotlhub.pages.dev'), 
+  metadataBase: new URL('https://axolotlhub.com'),
   title: {
     default: 'AxolotlHub | Complete Axolotl Care Guide, Facts & Resources',
     template: '%s | AxolotlHub',
@@ -34,12 +33,12 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://axolotlhub.pages.dev',
+    canonical: './',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://axolotlhub.pages.dev',
+    url: 'https://axolotlhub.com',
     siteName: 'AxolotlHub',
     title: 'AxolotlHub | Complete Axolotl Care Guide, Facts & Resources',
     description: 'The ultimate resource for axolotl care, facts, morphs, and breeding. Daily fresh axolotl content, interactive tools, and expert guidance.',
@@ -61,12 +60,7 @@ export const metadata: Metadata = {
     images: ['/og/default.jpg'],
   },
   verification: {
-<<<<<<< HEAD
-    // This is the specific fix for your Google Search Console verification
-    google: 'GLXZsEJksZNORwjvHa82_tcUEOXBzei8umPgMr7iRts', 
-=======
     google: 'GLXZsEJksZNORwjvHa82_tcUEOXBzei8umPgMr7iRts',
->>>>>>> 3744824 (first commit)
   },
   category: 'pets',
 };
