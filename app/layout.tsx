@@ -61,8 +61,12 @@ export const metadata: Metadata = {
     images: ['/og/default.jpg'],
   },
   verification: {
+<<<<<<< HEAD
     // This is the specific fix for your Google Search Console verification
     google: 'GLXZsEJksZNORwjvHa82_tcUEOXBzei8umPgMr7iRts', 
+=======
+    google: 'GLXZsEJksZNORwjvHa82_tcUEOXBzei8umPgMr7iRts',
+>>>>>>> 3744824 (first commit)
   },
   category: 'pets',
 };
