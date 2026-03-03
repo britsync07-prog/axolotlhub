@@ -75,6 +75,11 @@ export default function RootLayout({
       <head>
         <link rel="dns-prefetch" href="https://axoltlapi.herokuapp.com" />
         <link rel="preconnect" href="https://axoltlapi.herokuapp.com" crossOrigin="anonymous" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6279012817784726"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="font-sans antialiased bg-water-surface text-deep-abyss">
         <JsonLd data={OrganizationSchema} />
