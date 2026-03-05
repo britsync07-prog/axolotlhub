@@ -3,7 +3,7 @@ import { getAllMorphSlugs } from '@/lib/data/morphs';
 import { blogPosts } from '@/lib/data/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://axolotlhub.com';
+  const baseUrl = 'https://axolotlhub.pages.dev';
 
   const morphSlugs = getAllMorphSlugs();
 
