@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description: 'Free interactive tools for axolotl keepers. Tank size calculator, water parameter checker, feeding calculator, and more. Plan your axolotl care perfectly.',
   keywords: ['axolotl calculator', 'axolotl tools', 'tank size calculator', 'axolotl care tools'],
   alternates: {
-    canonical: 'https://axolotlhub.com/tools',
+    canonical: 'https://axolotlhub.pages.dev/tools',
   },
 };
 

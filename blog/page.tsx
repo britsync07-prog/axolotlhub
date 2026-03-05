@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: 'Read the latest axolotl care tips, research news, conservation updates, and community stories on the AxolotlHub blog.',
   keywords: ['axolotl blog', 'axolotl news', 'axolotl care tips', 'axolotl community'],
   alternates: {
-    canonical: 'https://axolotlhub.com/blog',
+    canonical: 'https://axolotlhub.pages.dev/blog',
   },
 };
 

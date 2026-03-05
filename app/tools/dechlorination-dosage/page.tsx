@@ -5,7 +5,7 @@ import { Footer } from '@/components/shared/Footer';
 export const metadata: Metadata = {
   title: 'Dechlorination Dosage Calculator | AxolotlHub',
   description: 'Calculate the right amount of dechlorinator for your axolotl tank. Use the product label and water volume for safe dosing.',
-  alternates: { canonical: 'https://axolotlhub.com/tools/dechlorination-dosage' },
+  alternates: { canonical: 'https://axolotlhub.pages.dev/tools/dechlorination-dosage' },
 };
 
 export default function DechlorinationDosagePage() {

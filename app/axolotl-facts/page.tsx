@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: 'Discover 200+ amazing axolotl facts! Learn about their regeneration abilities, neoteny, habitat, diet, and more. Daily updated facts about these incredible creatures.',
   keywords: ['axolotl facts', 'interesting axolotl facts', 'axolotl information', 'axolotl trivia'],
   alternates: {
-    canonical: 'https://axolotlhub.com/axolotl-facts',
+    canonical: 'https://axolotlhub.pages.dev/axolotl-facts',
   },
 };
 
@@ -55,8 +55,8 @@ export default function AxolotlFactsPage() {
   const articleSchema = createArticleSchema({
     title: '200+ Amazing Axolotl Facts',
     description: 'Comprehensive collection of axolotl facts covering regeneration, biology, habitat, and more.',
-    url: 'https://axolotlhub.com/axolotl-facts',
-    image: 'https://axolotlhub.com/og/facts.jpg',
+    url: 'https://axolotlhub.pages.dev/axolotl-facts',
+    image: 'https://axolotlhub.pages.dev/og/facts.jpg',
     datePublished: '2024-01-01',
     dateModified: new Date().toISOString(),
     author: 'AxolotlHub Team',

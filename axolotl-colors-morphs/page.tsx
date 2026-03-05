@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: 'Explore all axolotl colors and morphs from common leucistic pinks to rare chimeras. Learn about genetics, pricing, and care for each variety.',
   keywords: ['axolotl colors', 'axolotl morphs', 'axolotl types', 'axolotl varieties', 'GFP axolotl'],
   alternates: {
-    canonical: 'https://axolotlhub.com/axolotl-colors-morphs',
+    canonical: 'https://axolotlhub.pages.dev/axolotl-colors-morphs',
   },
 };
 
@@ -32,8 +32,8 @@ export default function AxolotlColorsMorphsPage() {
   const articleSchema = createArticleSchema({
     title: 'Complete Axolotl Colors & Morphs Guide',
     description: 'Visual encyclopedia of all axolotl morphs with genetics, pricing, and care information.',
-    url: 'https://axolotlhub.com/axolotl-colors-morphs',
-    image: 'https://axolotlhub.com/og/morphs.jpg',
+    url: 'https://axolotlhub.pages.dev/axolotl-colors-morphs',
+    image: 'https://axolotlhub.pages.dev/og/morphs.jpg',
     datePublished: '2024-01-01',
     dateModified: '2024-01-01',
     author: 'AxolotlHub Team',

@@ -41,7 +41,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
       },
     ],
-    sitemap: 'https://axolotlhub.com/sitemap.xml',
-    host: 'https://axolotlhub.com',
+    sitemap: 'https://axolotlhub.pages.dev/sitemap.xml',
+    host: 'https://axolotlhub.pages.dev',
   };
 }

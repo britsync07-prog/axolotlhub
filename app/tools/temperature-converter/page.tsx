@@ -5,7 +5,7 @@ import { Footer } from '@/components/shared/Footer';
 export const metadata: Metadata = {
   title: 'Axolotl Temperature Converter | °F to °C Guide',
   description: 'Convert Fahrenheit to Celsius and learn the safe temperature range for axolotl tanks. Keep water between 60–64°F (15–18°C).',
-  alternates: { canonical: 'https://axolotlhub.com/tools/temperature-converter' },
+  alternates: { canonical: 'https://axolotlhub.pages.dev/tools/temperature-converter' },
 };
 
 export default function TemperatureConverterPage() {

@@ -5,7 +5,7 @@ import { Footer } from '@/components/shared/Footer';
 export const metadata: Metadata = {
   title: 'Tank Cycle Timeline Estimator | AxolotlHub',
   description: 'Estimate how long it takes to cycle an axolotl tank and understand the steps of the nitrogen cycle for safe water conditions.',
-  alternates: { canonical: 'https://axolotlhub.com/tools/cycle-timeline-estimator' },
+  alternates: { canonical: 'https://axolotlhub.pages.dev/tools/cycle-timeline-estimator' },
 };
 
 export default function CycleTimelineEstimatorPage() {

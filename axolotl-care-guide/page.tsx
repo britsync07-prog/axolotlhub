@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   description: 'Learn how to care for axolotls with our comprehensive guide. Covers tank setup, water parameters, feeding, health, and breeding. Veterinary-reviewed advice for happy, healthy axolotls.',
   keywords: ['axolotl care', 'axolotl husbandry', 'pet axolotl guide', 'axolotl tank setup', 'axolotl feeding'],
   alternates: {
-    canonical: 'https://axolotlhub.com/axolotl-care-guide',
+    canonical: 'https://axolotlhub.pages.dev/axolotl-care-guide',
   },
   openGraph: {
     title: 'Complete Axolotl Care Guide 2024 | Husbandry & Tank Setup',
     description: 'Learn how to care for axolotls with our comprehensive guide. Veterinary-reviewed advice.',
-    url: 'https://axolotlhub.com/axolotl-care-guide',
+    url: 'https://axolotlhub.pages.dev/axolotl-care-guide',
     type: 'article',
   },
 };
@@ -131,8 +131,8 @@ export default function AxolotlCareGuidePage() {
   const articleSchema = createArticleSchema({
     title: 'Complete Axolotl Care Guide 2024',
     description: 'Comprehensive guide to axolotl care including tank setup, water parameters, feeding, and health.',
-    url: 'https://axolotlhub.com/axolotl-care-guide',
-    image: 'https://axolotlhub.com/og/care-guide.jpg',
+    url: 'https://axolotlhub.pages.dev/axolotl-care-guide',
+    image: 'https://axolotlhub.pages.dev/og/care-guide.jpg',
     datePublished: '2024-01-01',
     dateModified: '2024-01-01',
     author: 'AxolotlHub Team',

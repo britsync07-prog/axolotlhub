@@ -4,10 +4,10 @@ export const OrganizationSchema: SchemaData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'AxolotlHub',
-  url: 'https://axolotlhub.com',
+  url: 'https://axolotlhub.pages.dev',
   logo: {
     '@type': 'ImageObject',
-    url: 'https://axolotlhub.com/logo.png',
+    url: 'https://axolotlhub.pages.dev/logo.png',
     width: 512,
     height: 512,
   },
@@ -30,12 +30,12 @@ export const WebSiteSchema: SchemaData = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'AxolotlHub',
-  url: 'https://axolotlhub.com',
+  url: 'https://axolotlhub.pages.dev',
   potentialAction: {
     '@type': 'SearchAction',
     target: {
       '@type': 'EntryPoint',
-      urlTemplate: 'https://axolotlhub.com/search?q={search_term_string}',
+      urlTemplate: 'https://axolotlhub.pages.dev/search?q={search_term_string}',
     },
     'query-input': 'required name=search_term_string',
   },
@@ -83,7 +83,7 @@ export function createArticleSchema({
       name: 'AxolotlHub',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://axolotlhub.com/logo.png',
+        url: 'https://axolotlhub.pages.dev/logo.png',
         width: 512,
         height: 512,
       },
@@ -185,7 +185,7 @@ export function createImageObjectSchema({
     author: author ? { '@type': 'Person', name: author } : undefined,
     datePublished,
     license: 'https://creativecommons.org/licenses/by/4.0/',
-    acquireLicensePage: 'https://axolotlhub.com/licensing',
+    acquireLicensePage: 'https://axolotlhub.pages.dev/licensing',
   };
 }
 
@@ -213,7 +213,7 @@ export function createProductSchema({
       price: offers.price,
       priceCurrency: offers.currency,
       availability: offers.availability,
-      url: 'https://axolotlhub.com/products',
+      url: 'https://axolotlhub.pages.dev/products',
     },
     aggregateRating: rating
       ? {

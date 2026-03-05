@@ -50,12 +50,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: `Learn about ${morph.name} axolotls. Price range: $${morph.priceRange.min}-$${morph.priceRange.max}. ${morph.description.slice(0, 150)}...`,
     keywords: [`${morph.name} axolotl`, 'axolotl morph', 'axolotl genetics', 'axolotl price'],
     alternates: {
-      canonical: `https://axolotlhub.com/morphs/${morph.slug}`,
+      canonical: `https://axolotlhub.pages.dev/morphs/${morph.slug}`,
     },
     openGraph: {
       title: `${morph.name} Axolotl | Facts, Genetics & Care`,
       description: morph.description,
-      url: `https://axolotlhub.com/morphs/${morph.slug}`,
+      url: `https://axolotlhub.pages.dev/morphs/${morph.slug}`,
       type: 'article',
     },
   };
@@ -73,8 +73,8 @@ export default function MorphPage({ params }: Props) {
   const articleSchema = createArticleSchema({
     title: `${morph.name} Axolotl - Complete Guide`,
     description: morph.description,
-    url: `https://axolotlhub.com/morphs/${morph.slug}`,
-    image: `https://axolotlhub.com${morph.imageUrl}`,
+    url: `https://axolotlhub.pages.dev/morphs/${morph.slug}`,
+    image: `https://axolotlhub.pages.dev${morph.imageUrl}`,
     datePublished: '2024-01-01',
     dateModified: '2024-01-01',
     author: 'AxolotlHub Team',
@@ -82,9 +82,9 @@ export default function MorphPage({ params }: Props) {
   });
 
   const breadcrumbSchema = createBreadcrumbSchema([
-    { name: 'Home', url: 'https://axolotlhub.com' },
-    { name: 'Morphs', url: 'https://axolotlhub.com/axolotl-colors-morphs' },
-    { name: morph.name, url: `https://axolotlhub.com/morphs/${morph.slug}` },
+    { name: 'Home', url: 'https://axolotlhub.pages.dev' },
+    { name: 'Morphs', url: 'https://axolotlhub.pages.dev/axolotl-colors-morphs' },
+    { name: morph.name, url: `https://axolotlhub.pages.dev/morphs/${morph.slug}` },
   ]);
 
   return (

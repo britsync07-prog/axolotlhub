@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   description:
     'The ultimate resource for axolotl care, facts, morphs, and breeding. Daily fresh axolotl content, interactive tools, and expert guidance for keepers worldwide.',
   alternates: {
-    canonical: 'https://axolotlhub.com',
+    canonical: 'https://axolotlhub.pages.dev',
   },
   openGraph: {
     title: 'AxolotlHub | Complete Axolotl Care Guide, Facts & Resources',
     description:
       'The ultimate resource for axolotl care, facts, morphs, and breeding. Daily fresh content and interactive tools.',
-    url: 'https://axolotlhub.com',
+    url: 'https://axolotlhub.pages.dev',
     type: 'website',
   },
 };

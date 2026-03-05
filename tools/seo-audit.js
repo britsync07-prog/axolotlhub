@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const OUT_DIR = path.resolve(process.argv[2] || './out');
-const baseUrl = 'https://axolotlhub.com';
+const baseUrl = 'https://axolotlhub.pages.dev';
 const assetExt = /\.(jpg|jpeg|png|gif|webp|svg|css|js|map|ico|txt|xml|json|webmanifest)$/i;
 
 function listHtmlFiles(dir) {

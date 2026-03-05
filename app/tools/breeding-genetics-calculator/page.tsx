@@ -5,7 +5,7 @@ import { Footer } from '@/components/shared/Footer';
 export const metadata: Metadata = {
   title: 'Breeding Genetics Calculator | Axolotl Morphs',
   description: 'Estimate possible offspring colors when breeding different axolotl morphs. Learn basic genetics and responsible breeding tips.',
-  alternates: { canonical: 'https://axolotlhub.com/tools/breeding-genetics-calculator' },
+  alternates: { canonical: 'https://axolotlhub.pages.dev/tools/breeding-genetics-calculator' },
 };
 
 export default function BreedingGeneticsCalculatorPage() {
