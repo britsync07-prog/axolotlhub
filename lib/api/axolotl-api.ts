@@ -1,5 +1,3 @@
-import { cache } from 'react';
-
 export interface AxolotlData {
   url: string;
   facts: string[];
@@ -14,15 +12,12 @@ export interface AxolotlFact {
 
 const API_BASE_URL = 'https://axoltlapi.herokuapp.com';
 
-// Cache the fetch for 1 hour to reduce API calls
-export const getRandomAxolotl = cache(async (): Promise<AxolotlData> => {
+// Removed cache wrapper for compatibility with client-side fetching in static exports
+export async function getRandomAxolotl(): Promise<AxolotlData> {
   try {
     const response = await fetch(`${API_BASE_URL}/`, {
       headers: {
         Accept: 'application/json',
-      },
-      next: {
-        revalidate: 3600, // 1 hour
       },
     });
 
@@ -46,16 +41,13 @@ export const getRandomAxolotl = cache(async (): Promise<AxolotlData> => {
       num: 1,
     };
   }
-});
+}
 
-export const getRandomFact = cache(async (): Promise<AxolotlFact> => {
+export async function getRandomFact(): Promise<AxolotlFact> {
   try {
     const response = await fetch(`${API_BASE_URL}/facts/random`, {
       headers: {
         Accept: 'application/json',
-      },
-      next: {
-        revalidate: 3600,
       },
     });
 
@@ -72,7 +64,7 @@ export const getRandomFact = cache(async (): Promise<AxolotlFact> => {
       url: 'https://axoltlapi.herokuapp.com',
     };
   }
-});
+}
 
 // Predefined facts database for SEO content
 export const axolotlFactsDatabase = [
